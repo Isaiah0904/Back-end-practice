@@ -1,0 +1,138 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="incident-form.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="icon" href="images/oil-well-solid.svg">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <title>Incident Report Form</title>
+</head>
+<body>
+  <div class="header">
+    <div class="section1">
+      <img src="images/imperial-crest-logo.png">
+      <p>The Eshrow, 6th Floor, 2 Landbridge Road, Oniru - Victoria Island, Lagos - Nigeria</p>
+    </div>
+    <div class="section2">
+      .
+    </div>
+    <div class="section3">
+      .
+    </div>
+    </div>
+  </div>
+  <div class="mid-body-container">
+    <div class="mid-body-header">
+      <h1>INCIDENT REPORT FORM</h1>
+    </div>
+    <form>
+      <div class="mid-body-content">
+        <div class="content-1">
+          <p class="content-p">ID No. :</p>
+          <input type="text" value="ICEL/" minlength="15" maxlength="15" required>
+        </div>
+        <div class="content-2">
+          <p class="content-p">Date :</p>
+          <input type="date" required>
+        </div>
+        <div class="content-3">
+          <p>Dear Sir/Madam.</p>
+          <span class="content-desc">Below is the the Safety Report Procedure (SRP). You can simply fill in the information below to report the incident to the Health Safety and Environment (HSE) Officer.</span>
+        </div>
+        <div class="content-4">
+          <p>Staff Department:</p>
+          <input type="text" maxlength="25" required>
+        </div>
+      </div>  
+      </div>
+      <div class="form-header">
+        <div class="form-header-1">
+          <h3>Incident Details</h3>
+        </div>
+        <div class="form-header-2">
+          .
+        </div> 
+        <div class="form-header-3">
+          .
+        </div>
+      </div>
+      <div class="mid-body-container">
+        <div class="mid-body-content-2">
+          <div class="incident-type">
+            <h3>Incident Type</h3>
+            <div class="incident-type-1">
+              <input type="checkbox" class="radio" value="1" name="fooby[1][]"/><label>Accident</label>
+            </div>
+              <div class="incident-type-1">
+                <input type="checkbox" class="radio" value="1" name="fooby[1][]"/><label>Near Miss</label>
+              </div>
+              <div class="incident-type-1">
+                <input type="checkbox" class="radio" value="1" name="fooby[1][]"/><label>Unsafe Act</label>
+              </div>
+              <div class="incident-type-1">
+                <input type="checkbox" class="radio" value="1" name="fooby[1][]"/><label>Unsafe Condition</label>
+              </div>
+              <div class="incident-type-1">
+                <input type="checkbox" class="radio" value="1" name="fooby[1][]"/><label>Positive Behaviour</label>
+              </div>
+          </div>
+          <div class="form-content-2">
+            <p>Location</p>
+            <input type="text" required>
+          </div>
+          <div class="form-content-3">
+            <p>Incident Description</p>
+            <textarea rows="4" cols="40" required></textarea>
+          </div>
+          <div class="form-content-4">
+            <p>Immediate Corrective/Reinforcement Action</p>
+            <textarea rows="4" cols="40" required></textarea>
+          </div>
+          <div class="form-content-5">
+            <p>Date Observed</p>
+            <input type="date" required>
+          </div>
+          <div class="form-content-6">
+            <p>Date Reported</p>
+            <input type="date" required>
+          </div>
+          <div class="form-content-7">
+            <p>Observed by</p>
+            <input type="text" required>
+          </div>
+          <div class="form-content-8">
+            <p>Incident Report Category</p>
+            <div class="selector">
+              <div id="selectField">
+                <p id="selectText">Select the appropriate category</p>
+                <i id="arrowIcon" class="fa-solid fa-caret-down" style="color: #ffffff;"></i>
+              </div>
+              <ul id="list" class="hide">
+                <li class="options" aria-required="">PPE</li>
+                <li class="options">Work Environment</li>
+                <li class="options">Ergonomics</li>
+                <li class="options">Tools & Equipments</li>
+                <li class="options">Procedures</li>
+                <li class="options">Slip</li>
+                <li class="options">Trip & Fall</li>
+              </ul>
+            </div>
+          </div>
+          <div class="submission">
+            <button type="submit">Submit</button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <div class="footer-info">
+      <p>Imperial Crest Energy Limited &#169 2024</p>
+    </div>
+  <script src="incident-form.js"></script>
+</body>
+</html>

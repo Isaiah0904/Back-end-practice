@@ -1,0 +1,121 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pool Car Request Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pool-car-request.css">
+    <link rel="icon" href="images/oil-well-solid.svg">
+</head>
+<body>
+  <div class="content">
+    <div class="navbar">
+      <div class="navbar-holder">
+        <img src="images/imperial-crest-logo.png" alt="Logo">
+      </div>
+    </div>
+    <div id="travelFormContainer" class="container">
+      <div class="container-content">
+        <div class="close" onclick="hideForm()"><i class="fas fa-times"></i></div>
+        <header>Pool Car Request Form</header>
+        <h4>Enter the details for your Pool Car request</h4>
+        <form id="travelForm">
+          <div class="dep-date">
+            <label for="checkin">Date Requested *</label>
+            <input type="date" id="checkin" name="checkin" required>
+          </div>
+          <div class="airline">
+            <label>Requestor Name *</label>
+            <input type="text" required>
+          </div>
+          <div class="airline">
+            <label>Phone Number *</label>
+            <input type="tel" required>
+          </div>
+          <div class="trip">
+            <div>
+              <label>Number of passenger(s) *</label>
+            </div>
+            <div class="trip-1">
+              <input type="radio" name="pass-no" required><span>1</span>
+            </div>
+            <div class="trip-1">
+              <input type="radio" name="pass-no" required><span>2</span>
+            </div>
+            <div class="trip-1">
+              <input type="radio" name="pass-no" required><span>3</span>
+            </div>
+          </div>
+          <div class="passenger-name">
+            <label>Name of Passenger(s) *</label>
+            <input type="text" required>
+            <input type="text">
+            <input type="text">
+          </div>
+          <div class="airline">
+            <label>Pick-up Location *</label>
+            <input type="text" required>
+          </div>
+          <div class="airline">
+            <label>Drop-off Destination *</label>
+            <input type="text" required>
+          </div>
+          <div class="airline">
+            <label>Return Location *</label>
+            <input type="text" required>
+          </div>
+          <div class="airline">
+            <label>Purpose of Trip *</label>
+            <input type="text" required>
+          </div>
+          <div class="dep-date">
+            <label for="checkin">Departure Date *</label>
+            <input type="date" id="checkin" name="checkin" required>
+          </div>
+          <div class="dep-date">
+            <label for="checkin">Return Date *</label>
+            <input type="date" id="checkin" name="checkin" required>
+          </div>
+          <div class="dep-date">
+            <label for="checkin">Departure Time *</label>
+            <input type="time" id="checkin" name="checkin" required>
+          </div>
+          <div class="dep-date">
+            <label for="checkin">Estimated Return Time *</label>
+            <input type="time" id="checkin" name="checkin" required>
+          </div>
+          <div class="airline">
+            <label>Vehicle Driven by *</label>
+            <input type="text" required>
+          </div>
+          <div class="request">
+            <h4>Director/Supervisor Information</h4>
+            <div class="airline">
+              <label for="checkin">Name *</label>
+              <input type="text" required>
+            </div>
+            <div class="airline">
+              <label for="checkin">Designation *</label>
+              <input type="text" required>
+            </div>
+            <div class="airline">
+              <label for="checkin">Email *</label>
+              <input type="mail" required>
+            </div>
+          </div>
+          <div class="submit">
+              <button type="submit" class="submit-btn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="travelForm">
+        <button onclick="showForm()" type="submit" class="travelForm-btn">Proceed to Request for a Pool Car</button>
+    </div>
+  </div>
+    <script src="travel.js"></script>
+</body>
+</html>
